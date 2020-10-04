@@ -1,0 +1,18 @@
+class Solution {
+    public int singleNumber(int[] nums) {
+        HashSet <Integer> h =new HashSet<Integer>();
+        for(int i:nums)
+        {
+            if(!h.contains(i))
+                h.add(i);
+            else
+                h.remove(i);
+        }int j=0;
+        for(int i:h)
+        {
+            j=i;
+            
+        }
+        return j;
+    }
+}
